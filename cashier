@@ -1,0 +1,39 @@
+public class Cashier {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // Step1:define input attributes: price,amount,money
+        double price,amount,money;
+        // Step2:define output attributes:total,change
+        double total,change;
+        // Step3:let user input the information and save them into different
+        //atributes
+          // 1. obtain the data from users using Scanner
+        Scanner sc=new Scanner(System.in);
+          // 2. let users input the price of the product
+        System.out.println("Please enter the price of the product: ");
+          // 3. use sc to obtain data
+        price=sc.nextDouble();
+          // 4. repeat 2 and 3 above to get the amount and money
+        System.out.println("Please enter the amount of the product: ");
+        amount=sc.nextDouble();
+        System.out.println("Please enter the money you input: ");
+        money=sc.nextDouble();
+        // Step4:use price*amount to count the total price and save it into total
+        total=price*amount;
+        // Step5:decide whether total is over 500,
+        //       if it is, then print the amount of total*0.8
+        //       if it is not, then price total
+        //       no matter whether it is over 500, the price should be saved to
+        //       total
+        total=total>500?total*0.8:total;
+        // Step6:use money-total to come with change and save it into change
+        // Note: in this, the condition of money less than total will not be
+        // considered
+        change=money-total;
+        // Step7:print the result
+        System.out.println("Total Price: "+String.format("%.2f",total));
+        System.out.println("Change: "+String.format("%.2f",change));
+    }
