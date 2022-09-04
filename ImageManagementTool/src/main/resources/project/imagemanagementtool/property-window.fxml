@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.imagemanagementtool.PropertyController">
+   <children>
+      <StackPane layoutX="-1.0" prefHeight="64.0" prefWidth="600.0">
+         <children>
+            <Label text="Image Property" textAlignment="CENTER" textFill="#e1538e">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+      <TextField fx:id="nameScene" layoutX="35.0" layoutY="166.0" prefHeight="25.0" prefWidth="77.0" />
+      <TextField fx:id="heightScene" layoutX="122.0" layoutY="166.0" prefHeight="25.0" prefWidth="77.0" />
+      <TextField fx:id="widthScene" layoutX="208.0" layoutY="166.0" prefHeight="25.0" prefWidth="77.0" />
+      <TextField fx:id="locateScene" layoutX="300.0" layoutY="166.0" prefHeight="25.0" prefWidth="288.0" />
+      <Label layoutX="41.0" layoutY="138.0" text="Name" />
+      <Label layoutX="124.0" layoutY="138.0" text="Height" />
+      <Label layoutX="214.0" layoutY="138.0" text="Width" />
+      <Label layoutX="306.0" layoutY="138.0" prefHeight="17.0" prefWidth="61.0" text="Location" />
+   </children>
+</AnchorPane>
